@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">    
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>  
 </head>
 <body>
     
     <div class="LoginForm">
         <h1>Login</h1>
-        <input type="email" placeholder="Email">
+        <input id="mail" type="email" placeholder="Email">
         <br>
-        <input type="password" placeholder="Password">
+        <input id="pass" type="password" placeholder="Password">
         <br>
-        <button>Login</button>
+        <input type="submit" value="Login" onclick="App()">
         <br><br>
-        <p>Forgot Password?</p>
-        <p>Don't have an account?Sign up</p>
+        <p>Forgots <strong id="password">Password</strong>?</p>
+        <p>Don't have an account?<strong id="SignUp">Sign up</strong></p>
     </div>
 </body>
 </html>

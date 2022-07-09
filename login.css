@@ -1,22 +1,23 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(https://www.wallpapertip.com/wmimgs/25-250913_mix-colour-wallpaper.jpg);
+    background: url(25-250913_mix-colour-wallpaper.jpg);
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
+    
 }
 .LoginForm{
     width: 400px;
     height: 600px;
     background: white;
     margin: auto;
-    border: 1px solid red;
     top: 15%;
-    left: 40%;
+    left: 38%;
     position: absolute;
     box-sizing: border-box;
     text-align: center;
+    border-radius: 10px;
 }
 h1{
     margin: auto;
@@ -24,20 +25,34 @@ h1{
     text-align: center;
     font-size: 40px;
 }
-input{
+.LoginForm input[type="email"],.LoginForm input[type="password"]{
     width: 80%;
-    margin-bottom: 20px;
+    margin: 20px auto;
     border: none;
     border-bottom: 2px solid gray;
     background: transparent;
     outline: none;
     height: 40px;
+    transition: 0.25px;
 }
-button{
-    margin: auto;
-    background: url(https://www.wallpapertip.com/wmimgs/25-250913_mix-colour-wallpaper.jpg);
+input[type="submit"]{
+    
+    background: url(25-250913_mix-colour-wallpaper.jpg);
     padding: 15px 36%;
-    margin-bottom: 40px;
-    margin-top: 10px;
+    margin: 20px auto;
     border: 0px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.25px;
+    font-size: 20px;
+}
+input[type="submit"]:hover{
+    color: black;
+}
+#SignUp,#password{
+    color: blue;
+    cursor: pointer;
+}
+#SignUp:hover,#password:hover{
+    color: black;
 }
